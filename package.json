@@ -1,0 +1,23 @@
+{
+  "name": "procuremind",
+  "version": "1.0.0",
+  "description": "A procurement agent with persistent memory: it reads supplier quotes, recalls supplier history, and recommends who to buy from.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "seed": "node scripts/seed.js",
+    "extract": "node scripts/extract-demo.js",
+    "compare": "node scripts/compare-demo.js",
+    "outcome": "node scripts/outcome.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "dotenv": "^18.0.7",
+    "zod": "^4.6.7"
+  }
+}
